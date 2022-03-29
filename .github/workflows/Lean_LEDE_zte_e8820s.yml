@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: 云编译小米路由3
+name: 云编译中兴E8820s
 
 on:
   repository_dispatch:
