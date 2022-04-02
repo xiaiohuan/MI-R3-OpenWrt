@@ -26,7 +26,7 @@ sed -i 's/luci-theme-bootstrap/luci-theme-edge/g' ./feeds/luci/collections/luci/
 #sed -i 's/OpenWrt/HIWIFI-B70/g' package/base-files/files/bin/config_generate
 
 # 修改版本号
-sed -i "s/OpenWrt /MOLUN build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
+sed -i "s/OpenWrt /yuos-bit build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
 # 修改默认wifi名称ssid为tymishop
 #sed -i 's/ssid=OpenWrt/ssid=Yuos_$(cat /sys/class/ieee80211/${dev}/macaddress|awk -F ":" '{print $5""$6 }'| tr a-z A-Z)/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
