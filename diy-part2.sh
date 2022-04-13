@@ -18,12 +18,12 @@ sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 #sed -i '$a src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom' feeds.conf.default
  
-# Define My Package
+# 预下载主题
 #git clone https://github.com/vernesong/OpenClash package/molun/luci-app-openclash
-#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/molun/luci-app-jd-dailybonus
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome package/molun/luci-app-adguardhome
+#git clone https://github.com/jerrykuku/luci-app-jd-dailybonus package/molun/luci-app-jd-dailybonus
 #git clone https://github.com/sirpdboy/luci-theme-opentopd package/molun/luci-theme-opentopd
-#git clone https://github.com/zzsj0928/luci-app-pushbot package/molun/luci-app-pushbot
+#git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/molun/luci-theme-infinityfreedom
 git clone -b 18.06 https://github.com/kiddin9/luci-theme-edge package/molun/luci-theme-edge
 
 # 修改默认IP
