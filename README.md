@@ -49,4 +49,4 @@ rm -f .config.old && make defconfig && ./scripts/diffconfig.sh > seed.config && 
 
 ## License
 
-[MIT](https://github.com/molun/Auto-Build-OpenWrt/blob/master/LICENSE) © MOLUN
+[MIT](https://github.com/molun/Auto-Build-OpenWrt/blob/master/LICENSE) © yuos-bit
