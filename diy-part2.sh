@@ -9,9 +9,9 @@
 #============================================================
 
 # 修改默认IP
-#sed -i 's/192.168.1.1/10.32.0.1/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
 # 修改网关
-#sed -i 's/192.168.1.1/10.32.0.1/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.31.1/g' package/base-files/files/bin/config_generate
 
 # 删除默认密码
 #sed -i "/CYXluq4wUazHjmCDBCqXF/d" package/lean/default-settings/files/zzz-default-settings
@@ -26,10 +26,10 @@ sed -i 's/luci-theme-bootstrap/luci-theme-edge/g' ./feeds/luci/collections/luci/
 #sed -i 's/OpenWrt/HIWIFI-B70/g' package/base-files/files/bin/config_generate
 
 # 修改版本号
-sed -i "s/OpenWrt /yuos-bit build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
+sed -i "s/OpenWrt /xiaohuan-bit build $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" package/lean/default-settings/files/zzz-default-settings
 
 # 修改默认wifi名称ssid为tymishop
-#sed -i 's/ssid=OpenWrt/ssid=Yuos_$(cat /sys/class/ieee80211/${dev}/macaddress|awk -F ":" '{print $5""$6 }'| tr a-z A-Z)/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
+#sed -i 's/ssid=OpenWrt/ssid=MI-R3_$(cat /sys/class/ieee80211/${dev}/macaddress|awk -F ":" '{print $5""$6 }'| tr a-z A-Z)/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
 
 #开启MU-MIMO
 #sed -i 's/mu_beamformer=0/mu_beamformer=1/g' package/kernel/mac80211/files/lib/wifi/mac80211.sh
